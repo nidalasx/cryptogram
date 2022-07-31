@@ -1,26 +1,20 @@
 import string
-from values import *
 
-alphabet_characters = []
+from rx import return_value
+from values import *
+from functions import *
+
 
 user_message = input("What do you want to encrypt:")
-user_list = []
+
 
 input_key = input("What is your key:")
 KEY = int(input_key)
 
 
-for line in user_message:
-    for c in line:
-        user_list.append(c)
 
-
-for line in ALPHABET:
-    for c in line:
-        alphabet_characters.append(c)
-
-
-
+indvchar_list(ALPHABET, alphabet_characters)
+indvchar_list(user_message, user_list)
 
 user_length = len(user_list)
 
@@ -30,7 +24,7 @@ del alphabet_characters[0:KEY]
 
 alphabet_characters.extend(deleted_chars)
 
-encrypted_message = alphabet_characters[0:user_length + 1]
+encrypted_message = alphabet_characters[0:user_length]
 
 
 print("This is your encrypted message")
