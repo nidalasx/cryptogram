@@ -1,17 +1,11 @@
 import string
+from functions import *
+from values import *
 
 user_inputstring = input("What do you want to encrypt?:")
 user_inputkey = input("What is your key?:")
 user_inputkey = int(user_inputkey)
 
-ALPHABET = string.ascii_lowercase
-alphabet_list = []
-numbers_list = []
-
-def indvchar_list(x, y):
-    for line in x:
-        for c in line:
-            y.append(c)
 
 indvchar_list(ALPHABET, alphabet_list)
 
@@ -29,5 +23,7 @@ user_inputstring = [alphabet_list[i] for i in numbers_list]
 
 encrypted_string = "".join(user_inputstring)
 
+
+print("This is your encrypted message:")
 print(encrypted_string)
 
