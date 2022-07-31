@@ -1,11 +1,5 @@
 import string
 
 ALPHABET = string.ascii_lowercase
-
-"blabla"
-
-"testest"
-
-"kkkkkkkkk"
-
-"dhddhhdhd"
+alphabet_characters = []
+user_list = []
