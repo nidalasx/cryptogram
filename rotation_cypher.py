@@ -38,7 +38,8 @@ def caesar(text, shift, alphabets):
     return text.translate(table)
 
 
-#Print the encrypted message
+#Prints the encrypted message
+
 print(caesar(plain_text, key, [string.ascii_lowercase, string. ascii_uppercase, string.punctuation]))
 
 
