@@ -3,7 +3,7 @@ import string
 
 #Global variables
 plain_text = None
-key = None
+key = None 
 
 
 
@@ -41,13 +41,3 @@ def caesar(text, shift, alphabets):
 #Prints the encrypted message
 
 print(caesar(plain_text, key, [string.ascii_lowercase, string. ascii_uppercase, string.punctuation]))
-
-
-
-
-
-
-
-
-
-
