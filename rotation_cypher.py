@@ -11,9 +11,13 @@ key = None
 
 def input_start():
     
+    
+    #Users message
+
     global plain_text
     plain_text = input("What text do you want to encrypt?: ")
     
+    #Users key
 
     global key
     key = input("What key?: ")
