@@ -25,7 +25,7 @@ def input_start():
     
     return plain_text, key
 
-input_start()
+
 
 
 #Shifts and replaces the alphabets according to the desired key
@@ -43,5 +43,5 @@ def caesar(text, shift, alphabets):
 
 
 #Prints the encrypted message
-
-print(caesar(plain_text, key, [string.ascii_lowercase, string. ascii_uppercase, string.punctuation]))
+#//////////////////////////////////////////////////////////////
+#print(caesar(plain_text, key, [string.ascii_lowercase, string. ascii_uppercase, string.punctuation]))
